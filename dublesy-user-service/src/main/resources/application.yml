@@ -1,0 +1,8 @@
+server:
+  port: 9090
+
+jwt:
+  issuer: jara
+  subject: auth
+  expires-time: 3600 #1시간
+  secret: my-secret # 실무에서는 더 안전한 방법으로 관리 필요
