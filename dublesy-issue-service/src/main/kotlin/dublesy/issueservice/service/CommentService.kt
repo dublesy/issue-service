@@ -34,7 +34,7 @@ class CommentService(
         )
 
         issue.comments.add(comment)
-        return   commentRepository.save(comment).toResponse()
+        return commentRepository.save(comment).toResponse()
 
 
     }
