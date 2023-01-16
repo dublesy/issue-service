@@ -15,7 +15,7 @@ class JwtUtilsTest {
         val jwtClaim = JWTClaim(
             userId = 1,
             email = "dublesy@gmail.com",
-            profileURl = "profile.jpg",
+            profileUrl = "profile.jpg",
             username = "개발자"
         )
 
@@ -37,7 +37,7 @@ class JwtUtilsTest {
         val jwtClaim = JWTClaim(
             userId = 1,
             email = "dublesy@gmail.com",
-            profileURl = "profile.jpg",
+                profileUrl = "profile.jpg",
             username = "개발자"
         )
 
@@ -61,7 +61,7 @@ class JwtUtilsTest {
                 assertEquals(email, jwtClaim.email)
 
                 val profileUrl = claims["profileUrl"]!!.asString()
-                assertEquals(profileUrl, jwtClaim.profileURl)
+                assertEquals(profileUrl, jwtClaim.profileUrl)
 
                 val username = claims["username"]!!.asString()
                 assertEquals(username, jwtClaim.username)
